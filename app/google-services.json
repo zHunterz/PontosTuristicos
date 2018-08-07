@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "289957920426",
+    "firebase_url": "https://pontos-turisticos-pa.firebaseio.com",
+    "project_id": "pontos-turisticos-pa",
+    "storage_bucket": "pontos-turisticos-pa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289957920426:android:5244e6aef7de4571",
+        "android_client_info": {
+          "package_name": "tg2.com.local.pauloafonso.pontosturisticos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289957920426-th7auffsncu3gpsbdi62i2gv7hqssngh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tg2.com.local.pauloafonso.pontosturisticos",
+            "certificate_hash": "93dc2bd2e59190626db57b73b788c289ad71295f"
+          }
+        },
+        {
+          "client_id": "289957920426-ihuqv8dvf267eippd08oc7snohevdkrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ2z-nl_qu96QTjMyd5V6WwEwnZeUx9Sw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289957920426-ihuqv8dvf267eippd08oc7snohevdkrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
