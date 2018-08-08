@@ -1,10 +1,12 @@
-package tg2.com.local.pauloafonso.pontosturisticos;
+package tg2.com.local.pauloafonso.pontosturisticos.activity;
 
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import tg2.com.local.pauloafonso.pontosturisticos.R;
 
 public class MainActivity extends AppCompatActivity {
 
