@@ -4,69 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    tools:context="tg2.com.local.pauloafonso.pontosturisticos.activity.CadastroUsuarioActivity">
-
+    android:background="#FFFFFF"
+    tools:context="tg2.com.local.pauloafonso.pontosturisticos.activity.LoginActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView2"
         android:layout_width="@dimen/logo_width"
         android:layout_height="@dimen/logo_height"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/todo"
-        android:src="@drawable/logo_patur" />
+        app:srcCompat="@drawable/logo_patur" />
 
     <EditText
-        android:id="@+id/txt_cadastro_nome"
+        android:id="@+id/txt_login_email"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView3"
+        android:layout_below="@+id/imageView2"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="11dp"
-        android:ems="10"
-        android:hint="@string/digite_seu_nome"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/txt_cadastro_email"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/txt_cadastro_nome"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="13dp"
         android:ems="10"
         android:hint="@string/digite_seu_e_mail"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
 
     <EditText
-        android:id="@+id/txt_cadastro_senha"
+        android:id="@+id/txt_login_senha"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/txt_cadastro_email"
-        android:layout_below="@+id/txt_cadastro_email"
+        android:layout_alignStart="@+id/txt_login_email"
+        android:layout_below="@+id/txt_login_email"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="19dp"
         android:ems="10"
         android:hint="@string/digite_sua_senha"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textAlignment="center" />
 
     <Button
-        android:id="@+id/btn_cadastrar"
+        android:id="@+id/btn_logar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_cadastro_senha"
+        android:layout_below="@+id/txt_login_senha"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="18dp"
         android:background="@drawable/cor_botao"
-        android:text="@string/cadastrar"
-        android:textAlignment="center"
+        android:text="@string/logar"
         android:textColor="#FFFFFF" />
 
+    <TextView
+        android:id="@+id/txt_login_cadastrese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_logar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/txt_sem_conta"
+        android:textSize="18sp" />
 </RelativeLayout>

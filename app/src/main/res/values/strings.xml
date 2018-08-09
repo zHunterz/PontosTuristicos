@@ -2,4 +2,11 @@
     <string name="app_name">Pontos Turisticos</string>
     <string name="open">Aberto</string>
     <string name="close">Fechado</string>
+    <string name="todo">TODO</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="digite_seu_e_mail">Digite seu e-mail</string>
+    <string name="logar">Logar</string>
+    <string name="txt_sem_conta">Não tem conta? Cadastre-se</string>
 </resources>
