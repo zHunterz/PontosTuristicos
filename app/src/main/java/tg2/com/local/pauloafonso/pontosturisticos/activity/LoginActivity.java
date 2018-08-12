@@ -47,7 +47,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
-        FirebaseApp.initializeApp(this);
         verificaUsuarioLogado();
 
         txtCadastrar = (TextView) findViewById(R.id.txt_login_cadastrese);
