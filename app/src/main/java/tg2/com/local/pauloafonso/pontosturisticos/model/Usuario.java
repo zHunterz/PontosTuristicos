@@ -1,6 +1,7 @@
 package tg2.com.local.pauloafonso.pontosturisticos.model;
 
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
 
 import tg2.com.local.pauloafonso.pontosturisticos.config.ConfiguracaoFirebase;
 
@@ -18,7 +19,7 @@ public class Usuario {
         DatabaseReference referenciaFirebase = ConfiguracaoFirebase.getFirebase();
         referenciaFirebase.child("usuarios").child(getId()).setValue(this);
     }
-
+    @Exclude
     public String getId() {
         return id;
     }
@@ -43,6 +44,7 @@ public class Usuario {
         this.email = email;
     }
 
+    @Exclude
     public String getSenha() {
         return senha;
     }
