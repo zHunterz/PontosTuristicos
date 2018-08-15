@@ -7,10 +7,14 @@
     tools:context="tg2.com.local.pauloafonso.pontosturisticos.activity.MainActivity"
     android:id="@+id/drawer_layout">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
+
+        <include android:id="@+id/toolbar_main"
+            layout="@layout/toolbar"/>
 
         <TextView
             android:id="@+id/textView"

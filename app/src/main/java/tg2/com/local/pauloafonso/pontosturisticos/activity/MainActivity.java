@@ -7,6 +7,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.ToolbarWidgetWrapper;
 import android.view.MenuItem;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle nToggle;
     private FirebaseAuth autenticacao;
     private NavigationView navView;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         autenticacao = ConfiguracaoFirebase.getAutenticacao();
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar_main);
+        toolbar.setTitle("Pontos Turísticos");
+        toolbar.setTitleTextColor(getResources().getColor(R.color.textColor));
+        setSupportActionBar(toolbar);
         navView = (NavigationView) findViewById(R.id.nav_view);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         nToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);

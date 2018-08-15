@@ -27,7 +27,9 @@
         android:ems="10"
         android:hint="@string/digite_seu_e_mail"
         android:inputType="textEmailAddress"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
 
     <EditText
         android:id="@+id/txt_login_senha"
@@ -40,7 +42,9 @@
         android:ems="10"
         android:hint="@string/digite_sua_senha"
         android:inputType="textPassword"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
 
     <Button
         android:id="@+id/btn_logar"

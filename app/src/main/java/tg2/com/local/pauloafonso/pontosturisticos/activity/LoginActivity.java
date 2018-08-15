@@ -46,7 +46,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        getSupportActionBar().hide();
         verificaUsuarioLogado();
 
         txtCadastrar = (TextView) findViewById(R.id.txt_login_cadastrese);

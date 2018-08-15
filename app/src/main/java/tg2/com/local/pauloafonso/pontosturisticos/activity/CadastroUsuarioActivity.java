@@ -39,7 +39,6 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_usuario);
-        getSupportActionBar().hide();
 
         txt_cadastro_nome = (EditText) findViewById(R.id.txt_cadastro_nome);
         txt_cadastro_email = (EditText) findViewById(R.id.txt_cadastro_email);
