@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="textColor">#FFFFFF</color>
+    <color name="tabTextColor">@android:color/white</color>
+    <color name="tabIndicatorColor">@android:color/holo_blue_light</color>
 </resources>

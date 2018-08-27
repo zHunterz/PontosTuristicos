@@ -5,12 +5,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import tg2.com.local.pauloafonso.pontosturisticos.fragment.infosFragment;
-import tg2.com.local.pauloafonso.pontosturisticos.fragment.mapaFragment;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TabAdapter extends FragmentStatePagerAdapter {
 
-    private String[] tituloTabs = {"INFORMAÇÕES", "MAPAS"};
+    private final List<Fragment> fragmentList = new ArrayList<>();
+    private final List<String> fragmentListTitles = new ArrayList<>();
 
     public TabAdapter(FragmentManager fm) {
         super(fm);
@@ -18,28 +19,22 @@ public class TabAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment = null;
-
-        switch (position){
-            case 0:
-                fragment = new infosFragment();
-                break;
-            case 1:
-                fragment = new mapaFragment();
-                break;
-        }
-
-        return fragment;
+        return fragmentList.get(position);
     }
 
     @Override
     public int getCount() {
-        return tituloTabs.length;
+        return fragmentListTitles.size();
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return tituloTabs[position];
+        return fragmentListTitles.get(position);
+    }
+
+    public void AddFragment(Fragment fragment, String title){
+        fragmentList.add(fragment);
+        fragmentListTitles.add(title);
     }
 }

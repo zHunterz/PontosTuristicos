@@ -3,11 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".activity.MainActivity">
 
-    <item android:id="@+id/nav_account"
-        android:title="My Account"/>
+    <item android:id="@+id/nav_belvedere"
+        android:icon="@drawable/ic_action_send"
+        android:title="Parque Belvedere"/>
 
-    <item android:id="@+id/nav_settings"
-        android:title="Settings"/>
+    <item android:id="@+id/nav_catarina"
+        android:icon="@drawable/ic_action_send"
+        android:title="Raso da Catarina"/>
+
+    <item android:id="@+id/nav_umbuzeiro"
+        android:icon="@drawable/ic_action_send"
+        android:title="Serra do Umbuzeiro"/>
+
+    <item android:id="@+id/nav_hidreletrico"
+        android:icon="@drawable/ic_action_send"
+        android:title="Complexo Hidrelétrico"/>
+
+    <item android:id="@+id/nav_mangueiras"
+        android:icon="@drawable/ic_action_send"
+        android:title="Praça das Mangueiras"/>
+
+    <item android:id="@+id/nav_mariabonita"
+        android:icon="@drawable/ic_action_send"
+        android:title="Casa de Maria Bonita"/>
+
+    <item android:id="@+id/nav_mochila"
+        android:icon="@drawable/ic_action_send"
+        android:title="Trilha da Mochila"/>
+
+    <item android:id="@+id/nav_canions"
+        android:icon="@drawable/ic_action_send"
+        android:title="Cânions do São Francisco"/>
+
+    <item android:id="@+id/nav_cachoeiroa"
+        android:icon="@drawable/ic_action_send"
+        android:title="Cachoeira de Paulo Afonso"/>
 
     <item
         android:id="@+id/nav_logout"

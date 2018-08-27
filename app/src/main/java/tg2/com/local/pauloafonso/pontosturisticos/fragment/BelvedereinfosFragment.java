@@ -12,10 +12,10 @@ import tg2.com.local.pauloafonso.pontosturisticos.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class infosFragment extends Fragment {
+public class BelvedereinfosFragment extends Fragment {
 
 
-    public infosFragment() {
+    public BelvedereinfosFragment() {
         // Required empty public constructor
     }
 

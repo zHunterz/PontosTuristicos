@@ -12,10 +12,10 @@ import tg2.com.local.pauloafonso.pontosturisticos.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class mapaFragment extends Fragment {
+public class CatarinaInfosFragment extends Fragment {
 
 
-    public mapaFragment() {
+    public CatarinaInfosFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class mapaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mapa, container, false);
+        return inflater.inflate(R.layout.fragment_catarina_infos, container, false);
     }
 
 }
