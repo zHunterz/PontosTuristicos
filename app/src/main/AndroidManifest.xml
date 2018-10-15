@@ -20,7 +20,8 @@
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.BelvedereActivity" />
         <activity android:name=".activity.CatarinaActivity" />
-        <activity android:name=".activity.UmbuzeiroActivity"></activity>
+        <activity android:name=".activity.UmbuzeiroActivity" />
+        <activity android:name=".activity.ComplexoActivity"></activity>
     </application>
 
 </manifest>

@@ -59,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_umbuzeiro:
                         startActivity(new Intent(MainActivity.this, UmbuzeiroActivity.class));
                         return true;
+                    case R.id.nav_hidreletrico:
+                        startActivity(new Intent(MainActivity.this, ComplexoActivity.class));
+                        return true;
                     default:
                         return false;
                 }
