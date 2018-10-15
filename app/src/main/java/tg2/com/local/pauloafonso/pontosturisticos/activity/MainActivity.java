@@ -56,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_catarina:
                         startActivity(new Intent(MainActivity.this, CatarinaActivity.class));
                         return true;
+                    case R.id.nav_umbuzeiro:
+                        startActivity(new Intent(MainActivity.this, UmbuzeiroActivity.class));
+                        return true;
                     default:
                         return false;
                 }

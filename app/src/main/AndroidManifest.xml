@@ -19,7 +19,8 @@
         <activity android:name=".activity.CadastroUsuarioActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.BelvedereActivity" />
-        <activity android:name=".activity.CatarinaActivity"></activity>
+        <activity android:name=".activity.CatarinaActivity" />
+        <activity android:name=".activity.UmbuzeiroActivity"></activity>
     </application>
 
 </manifest>
