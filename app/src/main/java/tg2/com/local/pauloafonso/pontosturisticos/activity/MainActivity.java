@@ -62,6 +62,21 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_hidreletrico:
                         startActivity(new Intent(MainActivity.this, ComplexoActivity.class));
                         return true;
+                    case R.id.nav_mangueiras:
+                        startActivity(new Intent(MainActivity.this, MangueiraActivity.class));
+                        return true;
+                    case  R.id.nav_mariabonita:
+                        startActivity(new Intent(MainActivity.this, MariaBonitaActivity.class));
+                        return true;
+                    case  R.id.nav_mochila:
+                        startActivity(new Intent(MainActivity.this, MochilaActivity.class));
+                        return true;
+                    case  R.id.nav_canions:
+                        startActivity(new Intent(MainActivity.this, CaniosActivity.class));
+                        return true;
+                    case  R.id.nav_cachoeiroa:
+                        startActivity(new Intent(MainActivity.this, CachoeiraActivity.class));
+                        return true;
                     default:
                         return false;
                 }

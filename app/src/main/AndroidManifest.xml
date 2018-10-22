@@ -21,7 +21,12 @@
         <activity android:name=".activity.BelvedereActivity" />
         <activity android:name=".activity.CatarinaActivity" />
         <activity android:name=".activity.UmbuzeiroActivity" />
-        <activity android:name=".activity.ComplexoActivity"></activity>
+        <activity android:name=".activity.ComplexoActivity" />
+        <activity android:name=".activity.MangueiraActivity" />
+        <activity android:name=".activity.MariaBonitaActivity" />
+        <activity android:name=".activity.MochilaActivity" />
+        <activity android:name=".activity.CaniosActivity" />
+        <activity android:name=".activity.CachoeiraActivity"></activity>
     </application>
 
 </manifest>
