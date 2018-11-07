@@ -1,14 +1,20 @@
 package tg2.com.local.pauloafonso.pontosturisticos.activity;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -16,6 +22,9 @@ import tg2.com.local.pauloafonso.pontosturisticos.R;
 import tg2.com.local.pauloafonso.pontosturisticos.config.ConfiguracaoFirebase;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
+    private static final String COURSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle nToggle;
@@ -41,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(nToggle);
         nToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        permissoes();
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -94,6 +103,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void permissoes(){
+
+        String[] permissao = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
+
+        if(ContextCompat.checkSelfPermission(this.getApplicationContext(), FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+            if(ContextCompat.checkSelfPermission(this.getApplicationContext(), COURSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+                Toast.makeText(this, "Mapa", Toast.LENGTH_SHORT).show();
+            }else{
+                ActivityCompat.requestPermissions(this, permissao, 1234);
+            }
+        }else{
+            ActivityCompat.requestPermissions(this, permissao, 1234);
+        }
     }
 
     private void deslogarUsuario(){

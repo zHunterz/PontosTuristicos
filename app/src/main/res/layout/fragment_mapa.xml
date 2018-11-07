@@ -5,13 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".fragment.BelvederemapaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"/>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center"
-        android:text="Mapas"
-        android:textSize="26sp" />
 </FrameLayout>
