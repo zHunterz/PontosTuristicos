@@ -1,8 +1,11 @@
 package tg2.com.local.pauloafonso.pontosturisticos.activity;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
@@ -16,6 +19,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.auth.FirebaseAuth;
 
 import tg2.com.local.pauloafonso.pontosturisticos.R;
@@ -31,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth autenticacao;
     private NavigationView navView;
     private Toolbar toolbar;
+
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(ContextCompat.checkSelfPermission(this.getApplicationContext(), FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
             if(ContextCompat.checkSelfPermission(this.getApplicationContext(), COURSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
-                Toast.makeText(this, "Mapa", Toast.LENGTH_SHORT).show();
+
             }else{
                 ActivityCompat.requestPermissions(this, permissao, 1234);
             }

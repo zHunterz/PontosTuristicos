@@ -1,29 +1,47 @@
 package tg2.com.local.pauloafonso.pontosturisticos.fragment;
 
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.PolylineOptions;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 import tg2.com.local.pauloafonso.pontosturisticos.R;
-import tg2.com.local.pauloafonso.pontosturisticos.activity.BelvedereActivity;
+import tg2.com.local.pauloafonso.pontosturisticos.helper.DirectionsParser;
+import tg2.com.local.pauloafonso.pontosturisticos.helper.PassadorInfo;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,8 +49,10 @@ import tg2.com.local.pauloafonso.pontosturisticos.activity.BelvedereActivity;
 public class BelvederemapaFragment extends Fragment implements OnMapReadyCallback{
 
     private GoogleMap mMap;
+    private LatLng original;
     MapView mapView;
     View mView;
+
     public BelvederemapaFragment() {
         // Required empty public constructor
     }
@@ -41,7 +61,7 @@ public class BelvederemapaFragment extends Fragment implements OnMapReadyCallbac
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.fragment_mapa, container, false);
+                mView = inflater.inflate(R.layout.fragment_mapa, container, false);
         return mView;
     }
 
@@ -50,7 +70,7 @@ public class BelvederemapaFragment extends Fragment implements OnMapReadyCallbac
         super.onViewCreated(view, savedInstanceState);
 
         mapView = (MapView) mView.findViewById(R.id.map);
-        if(mapView != null){
+        if (mapView != null) {
             mapView.onCreate(null);
             mapView.onResume();
             mapView.getMapAsync(this);
@@ -62,11 +82,19 @@ public class BelvederemapaFragment extends Fragment implements OnMapReadyCallbac
         MapsInitializer.initialize(getContext());
 
         mMap = googleMap;
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        CameraPosition camPos = CameraPosition.builder().target(new LatLng(-34,151)).zoom(16).bearing(0).tilt(45).build();
+        LatLng belvedere = new LatLng(-9.392611, -38.208559);
+        mMap.addMarker(new MarkerOptions().position(belvedere).title("Parque Belvedere"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(belvedere));
+        CameraPosition camPos = CameraPosition.builder().target(new LatLng(-9.392611, -38.208559)).zoom(18).bearing(0).tilt(45).build();
 
         mMap.moveCamera(CameraUpdateFactory.newCameraPosition(camPos));
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(),
+                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+
+        mMap.setMyLocationEnabled(true);
+
     }
 }
