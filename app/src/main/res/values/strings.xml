@@ -15,4 +15,6 @@
     <string name="title_activity_belvedere_map">Map</string>
     <string name="textView_Telefone_Turismo">(75) 3281-3011</string>
     <string name="textView_Site_Turismo">http://www.pauloafonso.ba.gov.br</string>
+    <string name="nav_explorar">Explorar</string>
+    <string name="nav_infos">Info</string>
 </resources>

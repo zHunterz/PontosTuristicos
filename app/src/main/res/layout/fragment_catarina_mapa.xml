@@ -5,14 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".fragment.CatarinaMapaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <TextView
-        android:id="@+id/textMapa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center"
-        android:text="Mapa Catarina"
-        android:textSize="28sp" />
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_catarina"/>
 
 </FrameLayout>
