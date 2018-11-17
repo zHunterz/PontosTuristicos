@@ -25,28 +25,28 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/img_cultura"
             android:layout_width="178dp"
             android:layout_height="187dp"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView10"
+            android:layout_below="@+id/img_lazer"
             android:layout_marginRight="5dp"
             android:paddingRight="5dp"
             app:srcCompat="@drawable/cultura" />
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/img_alimentacao"
             android:layout_width="178dp"
             android:layout_height="187dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/imageView8"
+            android:layout_alignTop="@+id/img_cultura"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="0dp"
             android:paddingLeft="5dp"
             app:srcCompat="@drawable/alimentacao" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/img_lazer"
             android:layout_width="wrap_content"
             android:layout_height="144dp"
             android:layout_alignParentStart="true"
@@ -55,11 +55,11 @@
             app:srcCompat="@drawable/lazer" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/img_eventos"
             android:layout_width="wrap_content"
             android:layout_height="145dp"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView8"
+            android:layout_below="@+id/img_cultura"
             app:srcCompat="@drawable/eventos" />
     </RelativeLayout>
     
