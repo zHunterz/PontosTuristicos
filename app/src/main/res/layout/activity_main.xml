@@ -16,7 +16,52 @@
         <include android:id="@+id/toolbar_main"
             layout="@layout/toolbar"/>
 
+
+
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="178dp"
+            android:layout_height="187dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView10"
+            android:layout_marginRight="5dp"
+            android:paddingRight="5dp"
+            app:srcCompat="@drawable/cultura" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="178dp"
+            android:layout_height="187dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView8"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="0dp"
+            android:paddingLeft="5dp"
+            app:srcCompat="@drawable/alimentacao" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="144dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="75dp"
+            app:srcCompat="@drawable/lazer" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView8"
+            app:srcCompat="@drawable/eventos" />
+    </RelativeLayout>
     
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
