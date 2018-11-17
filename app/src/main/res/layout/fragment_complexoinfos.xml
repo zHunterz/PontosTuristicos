@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,12 +8,188 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:id="@+id/textInfos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center"
-        android:text="Informações Complexo"
-        android:textSize="28sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Complexo Hidrelétrico"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_light_default"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_Complexo" />
+
+            <TextView
+                android:id="@+id/textView_texto_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="serif"
+                android:text="O Complexo Hidrelétrico em Paulo Afonso - BA tem um passeio repleto de  lagos, quedas d`água, vegetação nativa, pontes estreitas e flores, muitas flores. A Compa-nhia Hidro Elétrica do São Francisco - Chesf - iniciou a construção de suas usinas em Paulo Afonso no ano de 1949. Hoje, estão instaladas na região, num raio de 4 km, 5 grandes hidrelétricas, a Usina Apolônio Sales, na divisa de Paulo Afonso-BA e Delmiro Gouveia-AL e as Usinas Paulo Afonso, I, II, III e IV que produzem 4.300 MW de energia elétrica. "
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_light_default"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Complexo" />
+
+            <TextView
+                android:id="@+id/textView_Contato_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/common_google_signin_btn_text_dark_disabled"
+                android:padding="10dp"
+                android:text="Entre em Contato"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_importante4" />
+
+            <TextView
+                android:id="@+id/textView_Email_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:autoLink="email"
+                android:drawableStart="@drawable/ic_mail_outline_vermelha_24dp"
+                android:drawablePadding="20dp"
+                android:text="ouvidoria@pauloafonso.ba.gov.br"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Contato_Complexo" />
+
+            <View
+                android:id="@+id/divider_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="7dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Email_Complexo" />
+
+            <TextView
+                android:id="@+id/textView_Site_Turismo_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:autoLink="web"
+                android:drawableStart="@drawable/ic_link_black_24dp"
+                android:drawablePadding="20dp"
+                android:text="@string/textView_Site_Turismo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_Complexo" />
+
+            <View
+                android:id="@+id/divider2_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="7dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Site_Turismo_Complexo" />
+
+            <TextView
+                android:id="@+id/textView_Telefone_Turismo_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:autoLink="phone"
+                android:drawableStart="@drawable/ic_local_phone_vermelho_20dp"
+                android:drawablePadding="20dp"
+                android:text="@string/textView_Telefone_Turismo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2_Complexo" />
+
+            <View
+                android:id="@+id/divider3_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="7dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Telefone_Turismo_Complexo" />
+
+            <TextView
+                android:id="@+id/textView_Youtube_Complexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="30dp"
+                android:autoLink="web"
+                android:drawableStart="@drawable/ic_youtube"
+                android:drawablePadding="20dp"
+                android:text="https://youtu.be/WMF-KDkFMyo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3_Complexo" />
+
+            <TextView
+                android:id="@+id/textView_importante4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="IMPORTANTE: Só é possivel visitar este local acompanhado por um guia. Então entre em contato com a secretaria de turismo."
+                android:textColor="@android:color/holo_red_dark"
+                app:layout_constraintBottom_toTopOf="@+id/textView_Contato_Complexo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_texto_Complexo" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 
 </FrameLayout>

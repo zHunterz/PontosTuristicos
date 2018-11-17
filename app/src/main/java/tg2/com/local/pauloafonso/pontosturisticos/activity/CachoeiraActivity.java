@@ -10,6 +10,8 @@ import android.view.MenuItem;
 
 import tg2.com.local.pauloafonso.pontosturisticos.R;
 import tg2.com.local.pauloafonso.pontosturisticos.adapter.TabAdapter;
+import tg2.com.local.pauloafonso.pontosturisticos.fragment.CachoeiraInfoFragment;
+import tg2.com.local.pauloafonso.pontosturisticos.fragment.CachoeiraMapaFragment;
 import tg2.com.local.pauloafonso.pontosturisticos.fragment.CanionsInfoFragment;
 import tg2.com.local.pauloafonso.pontosturisticos.fragment.CanionsMapaFragment;
 import tg2.com.local.pauloafonso.pontosturisticos.fragment.UmbuzeiroInfosFragment;
@@ -39,8 +41,8 @@ public class CachoeiraActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.vp_cachoeira);
         //Adicionando fragments
         TabAdapter tabAdapter = new TabAdapter(getSupportFragmentManager());
-        tabAdapter.AddFragment(new CanionsInfoFragment(), "Informações");
-        tabAdapter.AddFragment(new CanionsMapaFragment(), "Mapa");
+        tabAdapter.AddFragment(new CachoeiraInfoFragment(), "Informações");
+        tabAdapter.AddFragment(new CachoeiraMapaFragment(), "Mapa");
         viewPager.setAdapter(tabAdapter);
         tabLayout.setupWithViewPager(viewPager);
     }

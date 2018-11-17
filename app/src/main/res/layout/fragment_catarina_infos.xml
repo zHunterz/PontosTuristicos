@@ -53,7 +53,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="serif"
-                android:text="O Raso da Catarina é um dos mais belos atrativos turísticos situado na cidade de Paulo Afonso - BA, dividida entre uma reserva biológica e indígena tendo uma ex-tensão de 6.400 km², com uma vegetação do tipo caatinga e clima de área deserta, abriga algumas plantas típicas tais como xique-xiques, mandacarus, coroas-de-frade, facheiros, palmatórias. (PREFEITURA, 2014)."
+                android:text="O Raso da Catarina é um dos mais belos atrativos turísticos situado na cidade de Paulo Afonso - BA, dividida entre uma reserva biológica e indígena tendo uma ex-tensão de 6.400 km², com uma vegetação do tipo caatinga e clima de área deserta, abriga algumas plantas típicas tais como xique-xiques, mandacarus, coroas-de-frade, facheiros, palmatórias."
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@color/common_google_signin_btn_text_light_default"
@@ -67,14 +67,14 @@
                 android:id="@+id/textView_Contato_Catarina"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="8dp"
                 android:background="@color/common_google_signin_btn_text_dark_disabled"
                 android:padding="10dp"
                 android:text="Entre em Contato"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_texto_Catarina" />
+                app:layout_constraintTop_toBottomOf="@+id/textView_importante" />
 
             <TextView
                 android:id="@+id/textView_Email_Catarina"
@@ -92,7 +92,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView_Contato_Catarina" />
 
             <View
-                android:id="@+id/divider3"
+                android:id="@+id/divider3_Complexo"
                 android:layout_width="0dp"
                 android:layout_height="1dp"
                 android:layout_marginStart="7dp"
@@ -116,7 +116,7 @@
                 android:text="@string/textView_Site_Turismo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider3" />
+                app:layout_constraintTop_toBottomOf="@+id/divider3_Complexo" />
 
             <View
                 android:id="@+id/divider5"
@@ -131,7 +131,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView_Site_Turismo" />
 
             <TextView
-                android:id="@+id/textView_Telefone_Turismo"
+                android:id="@+id/textView_Telefone_Turismo_Complexo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -155,7 +155,7 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_Telefone_Turismo" />
+                app:layout_constraintTop_toBottomOf="@+id/textView_Telefone_Turismo_Complexo" />
 
             <TextView
                 android:id="@+id/textView_Youtube_Catarina"
@@ -173,6 +173,21 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+            <TextView
+                android:id="@+id/textView_importante"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="IMPORTANTE: Só é possivel visitar este local acompanhado por um guia. Então entre em contato com a secretaria de turismo."
+                android:textColor="@android:color/holo_red_dark"
+                app:layout_constraintBottom_toTopOf="@+id/textView_Contato_Catarina"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_texto_Catarina" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
