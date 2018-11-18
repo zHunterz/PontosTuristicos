@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.lazerActivity">
-
-
+    tools:context=".activity.culturaActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,7 +17,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <include android:id="@+id/toolbar_lazer"
+            <include android:id="@+id/toolbar_cultura"
                 layout="@layout/toolbar"/>
 
             <ImageView
@@ -30,24 +28,12 @@
                 android:layout_below="@+id/toolbar_lazer"
                 app:srcCompat="@drawable/lazer_theme" />
 
-            <!-- <TextView
-                android:id="@+id/txt_id_lazer"
-                android:layout_width="wrap_content"
-                android:layout_height="450dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="181dp"
-                android:text="@string/txt_lazer"
-                android:textAppearance="@style/TextAppearance.AppCompat" /> -->
-
             <WebView
-                android:id="@+id/web_lazer"
+                android:id="@+id/web_cultura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
     </ScrollView>
-
-
 
 </RelativeLayout>

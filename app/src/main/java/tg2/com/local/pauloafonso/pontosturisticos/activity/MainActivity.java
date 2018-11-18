@@ -18,6 +18,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth autenticacao;
     private NavigationView navView;
     private Toolbar toolbar;
-    private ImageView img_lazer;
+    private Button btn_lazer;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitleTextColor(getResources().getColor(R.color.textColor));
         setSupportActionBar(toolbar);
 
-        img_lazer = (ImageView) findViewById(R.id.img_lazer);
-        img_lazer.setOnClickListener(new View.OnClickListener() {
+        btn_lazer = (Button) findViewById(R.id.btn_lazer);
+        btn_lazer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, lazerActivity.class));
