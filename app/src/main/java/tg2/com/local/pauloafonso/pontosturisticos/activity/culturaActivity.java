@@ -30,8 +30,13 @@ public class culturaActivity extends AppCompatActivity {
 
         String text = "<html><body>"
                 + "<p align=\"justify\">"
-                + "Paulo Afonso é uma cidade cheia de atrativos naturais, porém, ao chegar na cidade, já é notório o cuidado com o qual a cidade foi crescendo. Temos belas praças, dentre elas, a Praça das Mangueiras é um ponto onde não se pode deixar de ir e tirar belíssimas fotos. Temos também a Praça da Tribuna, onde aconteciam várias manifestações culturais. O calçadão da Av. Getúlio Vargas é um belo lugar para apreciar os bares, lanchonetes e uma grande quantidade de lojas. "
+                + "Paulo Afonso é o resultado de uma mistura de cultura, cores, raças, costumes. O que nos faz muito ricos nesse aspecto. Aqui temos excelentes músicos, desenhistas, contadores de causos, poetas, atores, artesãos, enfim, uma infinidade de artistas das mais diversas vertentes."
                 + "</p>"
+                + "<p align=\"justify\">"
+                + "No que se refere ao artesanato, no Povoado Malhada Grande um núcleo de produção artesanal, cria, há anos, em seus teares manuais, rústicos, peças de crochê e tricô, tapetes de fios, que têm atraído a atenção dos amantes da arte pura e regional e já foram até exportados para a Europa e Estados Unidos."
+                + "</p>"
+                + "<p align=\"justify\">"
+                + "Temos também uma grande influência do cangaço, afinal, foi aqui que Lampião passou boa parte de sua vida, na região conhecida como Raso da Catarina. Daqui saíram 47 cangaceiros para o seu bando. E foi do Povoado Malhada da Caiçara, no município de Paulo Afonso, que  ele \"levou\" Maria Bonita, nossa conterrânea, que ficou conhecida como “a rainha do cangaço”. Um grupo folclórico “Cangaceiros de Lampião” existe há 60 anos."
                 + "</body></html>";
 
         webView.loadData(text,"text/html", "utf-8");

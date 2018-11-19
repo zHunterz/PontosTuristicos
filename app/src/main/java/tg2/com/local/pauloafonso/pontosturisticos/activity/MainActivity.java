@@ -20,10 +20,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.auth.FirebaseAuth;
+
+import org.w3c.dom.Text;
 
 import tg2.com.local.pauloafonso.pontosturisticos.R;
 import tg2.com.local.pauloafonso.pontosturisticos.config.ConfiguracaoFirebase;
@@ -39,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navView;
     private Toolbar toolbar;
     private Button btn_lazer;
+    private Button btn_cultura;
+    private Button btn_eventos;
+    private Button btn_gastro;
+    private TextView txt_cabecalho;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +63,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, lazerActivity.class));
+            }
+        });
+
+        btn_cultura = (Button) findViewById(R.id.btn_cultura);
+        btn_cultura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, culturaActivity.class));
+            }
+        });
+
+        btn_eventos = (Button) findViewById(R.id.btn_eventos);
+        btn_eventos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, eventosActivity.class));
+            }
+        });
+
+        btn_gastro = (Button) findViewById(R.id.btn_gastronomia);
+        btn_gastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, gastronomiaActivity.class));
             }
         });
 
@@ -101,6 +132,18 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case  R.id.nav_cachoeiroa:
                         startActivity(new Intent(MainActivity.this, CachoeiraActivity.class));
+                        return true;
+                    case  R.id.nav_memorial:
+                        startActivity(new Intent(MainActivity.this, MemorialActivity.class));
+                        return true;
+                    case  R.id.nav_ponte:
+                        startActivity(new Intent(MainActivity.this, ponteActivity.class));
+                        return true;
+                    case  R.id.nav_touro:
+                        startActivity(new Intent(MainActivity.this, monumentoActivity.class));
+                        return true;
+                    case  R.id.nav_igreja:
+                        startActivity(new Intent(MainActivity.this, igrejaActivity.class));
                         return true;
                     default:
                         return false;

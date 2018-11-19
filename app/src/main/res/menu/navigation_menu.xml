@@ -39,6 +39,21 @@
         android:icon="@drawable/ic_action_send"
         android:title="Cachoeira de Paulo Afonso"/>
 
+    <item android:id="@+id/nav_memorial"
+        android:icon="@drawable/ic_action_send"
+        android:title="Memorial CHESF"/>
+
+    <item android:id="@+id/nav_ponte"
+        android:icon="@drawable/ic_action_send"
+        android:title="Ponte Metálica Dom Pedro II"/>
+
+    <item android:id="@+id/nav_touro"
+        android:icon="@drawable/ic_action_send"
+        android:title="Monumento O Touro e a Sucuri"/>
+
+    <item android:id="@+id/nav_igreja"
+        android:icon="@drawable/ic_action_send"
+        android:title="Igreja de São Francisco de Assis"/>
     <item
         android:id="@+id/nav_logout"
         android:icon="@drawable/ic_exit_to_app"

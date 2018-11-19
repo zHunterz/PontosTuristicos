@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.culturaActivity">
+    tools:context=".activity.gastronomiaActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <include android:id="@+id/toolbar_cultura"
+            <include android:id="@+id/toolbar_gastronomia"
                 layout="@layout/toolbar"/>
 
             <ImageView
@@ -25,11 +25,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="286dp"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/toolbar_lazer"
-                app:srcCompat="@drawable/cultura_theme" />
+                android:layout_below="@+id/toolbar_gastronomia"
+                app:srcCompat="@drawable/gastronomia_theme" />
 
             <WebView
-                android:id="@+id/web_cultura"
+                android:id="@+id/web_gastronomia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

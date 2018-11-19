@@ -53,7 +53,13 @@
             android:name=".activity.BelvedereMapActivity"
             android:label="@string/title_activity_belvedere_map" />
         <activity android:name=".activity.lazerActivity" />
-        <activity android:name=".activity.culturaActivity"></activity>
+        <activity android:name=".activity.culturaActivity" />
+        <activity android:name=".activity.eventosActivity" />
+        <activity android:name=".activity.gastronomiaActivity" />
+        <activity android:name=".activity.MemorialActivity" />
+        <activity android:name=".activity.ponteActivity" />
+        <activity android:name=".activity.monumentoActivity" />
+        <activity android:name=".activity.igrejaActivity"></activity>
     </application>
 
 </manifest>
