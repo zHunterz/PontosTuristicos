@@ -50,7 +50,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="serif"
-                android:text="A serra do umbuzeiro em Paulo Afonso - BA é localizada no povoado Riacho cená-rio para uma ótima caminhada. “O passeio envolve contato com a vegetação típica do semi-árido, belas formações rochosas de arenito, grutas, cavernas e pinturas ru-pestres. Do alto dos seus 536 metros tem-se uma fabulosa visão em 360 graus do município de Paulo Afonso.” (PREFEITURA, 2014)."
+                android:text="A serra do umbuzeiro em Paulo Afonso - BA é localizada no povoado Riacho cená-rio para uma ótima caminhada. O passeio envolve contato com a vegetação típica do semi-árido, belas formações rochosas de arenito, grutas, cavernas e pinturas ru-pestres. Do alto dos seus 536 metros tem-se uma fabulosa visão em 360 graus do município de Paulo Afonso."
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@color/common_google_signin_btn_text_light_default"

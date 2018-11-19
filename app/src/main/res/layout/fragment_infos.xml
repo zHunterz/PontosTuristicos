@@ -52,7 +52,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="serif"
-                android:text="Construída no final dos anos 40, o Parque do belvedere encontramos um belíssimo jardim, lago artificial, fonte luminosa, estacionamento, parque infantil, espaço para eventos, além da instalação de um sistema de iluminação especial, é um excelente point de encontro da família paulafonsina e dos turistas. "
+                android:text="Construído no final dos anos 40, o Parque do belvedere encontramos um belíssimo jardim, lago artificial, fonte luminosa, estacionamento, parque infantil, espaço para eventos, além da instalação de um sistema de iluminação especial, é um excelente point de encontro da família paulafonsina e dos turistas. "
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@color/common_google_signin_btn_text_light_default"

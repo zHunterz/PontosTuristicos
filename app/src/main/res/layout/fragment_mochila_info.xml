@@ -52,7 +52,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="serif"
-                android:text="O lugar, localizado no Povoado Jardim Cordeiro, em Delmiro Gouveia (AL), caminha para se tornar um empreendimento turístico, com bar, restaurante, serviços de hospedagem e esportes de aventura. Enquanto isso, o banho às margens do Velho Chico, diante da exuberância dos cânions, continua sendo o principal atrativo dos turistas."
+                android:text="O lugar localizado no Povoado Jardim Cordeiro, em Delmiro Gouveia (AL), caminha para se tornar um empreendimento turístico, com bar, restaurante, serviços de hospedagem e esportes de aventura. Enquanto isso, o banho às margens do Velho Chico, diante da exuberância dos cânions, continua sendo o principal atrativo dos turistas."
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@color/common_google_signin_btn_text_light_default"

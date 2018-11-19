@@ -52,7 +52,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="serif"
-                android:text="O Complexo Hidrelétrico em Paulo Afonso - BA tem um passeio repleto de  lagos, quedas d`água, vegetação nativa, pontes estreitas e flores, muitas flores. A Compa-nhia Hidro Elétrica do São Francisco - Chesf - iniciou a construção de suas usinas em Paulo Afonso no ano de 1949. Hoje, estão instaladas na região, num raio de 4 km, 5 grandes hidrelétricas, a Usina Apolônio Sales, na divisa de Paulo Afonso-BA e Delmiro Gouveia-AL e as Usinas Paulo Afonso, I, II, III e IV que produzem 4.300 MW de energia elétrica. "
+                android:text="O Complexo Hidrelétrico em Paulo Afonso - BA tem um passeio repleto de  lagos, quedas d`água, vegetação nativa, pontes estreitas e flores, muitas flores. A Compa-nhia Hidro Elétrica do São Francisco - Chesf - iniciou a construção de suas usinas em Paulo Afonso no ano de 1949. Hoje, estão instaladas na região, num raio de 4 km, 5 grandes hidrelétricas, a Usina Apolônio Sales, na divisa de Paulo Afonso-BA e Delmiro Gouveia-AL e as Usinas Paulo Afonso, I, II, III e IV que produzem 4.300 MW de energia elétrica."
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@color/common_google_signin_btn_text_light_default"
